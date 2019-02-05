@@ -1,0 +1,35 @@
+{
+  "name": "jsql-node-plugin",
+  "version": "2.3.0",
+  "description": "JSQL node plugin",
+  "main": "jsql-node",
+  "typings": "jsql-node.d.ts",
+  "scripts": {},
+  "keywords": [
+    "jsql-node",
+    "jsql",
+    "jsql-it",
+    "jsql-optimization"
+  ],
+  "author": "JSQL",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.1.0",
+    "express": "^4.14.0",
+    "mysql": "^2.16.0",
+    "node-cache": "^4.2.0",
+    "pg": "^7.8.0",
+    "pg-hstore": "^2.3.2",
+    "pg-promise": "^8.5.2",
+    "request": "^2.88.0",
+    "sequelize": "^4.42.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}
