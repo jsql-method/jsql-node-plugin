@@ -20,8 +20,6 @@ Jsql.TRANSACTION_ID = "txid";
 
 Jsql.__call = function (transactionId, fullUrl, request, config) {
 
-    console.log('request',request);
-
     return rp({
         method: 'POST',
         url: fullUrl,
