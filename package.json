@@ -1,8 +1,8 @@
 {
   "name": "jsql-node-plugin",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "JSQL plugin for Node",
-  "main": "jsql-node.js",
+  "main": "index.js",
   "typings": "jsql-node.d.ts",
   "scripts": {},
   "keywords": [

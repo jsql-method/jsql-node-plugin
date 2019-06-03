@@ -19,7 +19,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'dist/jsql-node.js': ['src/jsql-node.js']
+                    'dist/index.js': ['src/jsql-node.js']
                 }
             }
         },

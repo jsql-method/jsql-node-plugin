@@ -17,7 +17,9 @@ pause >nul
 ECHO Zmiany s� teraz publikowane w rejestrze NPM
 CALL npm install
 CALL build.bat
+CALL cd dist
 CALL npm publish
+CALL cd ..
 
 REM wylogowuje ############################################################
 CALL npm logout
