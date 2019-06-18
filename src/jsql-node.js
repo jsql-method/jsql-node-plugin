@@ -1,12 +1,14 @@
 let rp = require('request-promise');
 
-function JsqlConfig(apiKey, devKey, readTimeout, connectTimeout, providerUrl) {
-    this.apiKey = apiKey;
-    this.devKey = devKey;
-    this.readTimeout = readTimeout || 10000;
-    this.connectTimeout = connectTimeout || 15000;
-    this.providerUrl = providerUrl || "https://provider.Jsql.it/api/Jsql";
+function JsqlConfig(config) {
 
+    this.apiKey = config.apiKey;
+    this.devKey = config.devKey;
+    this.readTimeout = config.readTimeout || 10000;
+    this.connectTimeout = config.connectTimeout || 15000;
+    this.providerPort = config.providerPort || '';
+    this.providerUrl = config.providerUrl || 'https://provider.jsql.it';
+    this.providerUrl = this.providerUrl + this.providerPort + "/api/jsql";
 }
 
 function JsqlResponse(response, transactionId) {
